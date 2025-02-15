@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # 当推送以 v 开头的标签时触发
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # 检出代码
+      - name: 检出代码
+        uses: actions/checkout@v2
+
+      - name: 创建zip压缩包
+        run: |
+          Compress-Archive -Path UltraApp -DestinationPath UltraApp-${{ github.ref_name }}.zip
+
+      - name: 发布 Release
+        id: release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ github.workspace }}\UltraApp-${{ github.ref_name }}.zip
+          body_path: ${{ github.workspace }}\UltraApp\UltraApp-${{ github.ref_name }}.md
+          token: ${{ secrets.TOKEN }}
