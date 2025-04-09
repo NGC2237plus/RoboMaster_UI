@@ -1,0 +1,10 @@
+{
+    "默认": {
+        "line": "Line_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${start_x}, ${start_y}, ${end_x}, ${end_y});",
+        "rect": "Rectangle_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${start_x}, ${start_y}, ${end_x}, ${end_y});",
+        "circle": "Circle_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${center_x}, ${center_y}, ${radius});",
+        "arc": "",
+        "text": "Char_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${font_size}, ${text_length}, ${start_x}, ${start_y}, ${text});",
+        "number": ""
+    }
+}
