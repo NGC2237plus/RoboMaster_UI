@@ -3,8 +3,8 @@
         "line": "Line_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${start_x}, ${start_y}, ${end_x}, ${end_y});",
         "rect": "Rectangle_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${start_x}, ${start_y}, ${end_x}, ${end_y});",
         "circle": "Circle_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${center_x}, ${center_y}, ${radius});",
-        "arc": "",
+        "arc": "Arc_Draw(&G{count}, ${id}, UI_Graph_ADD, ${layer}, ${color}, ${width}, ${startAngle}, ${spanAngle}, ${cx}, ${cy}, ${r}, ${r});",
         "text": "Char_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${font_size}, ${text_length}, ${start_x}, ${start_y}, ${text});",
-        "number": ""
+        "number": "Char_Draw(${Graph}, ${id}, ${operate}, ${layer}, ${color}, ${width}, ${font_size}, ${text_length}, ${start_x}, ${start_y}, ${text});"
     }
 }
