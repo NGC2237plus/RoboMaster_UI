@@ -1,7 +1,7 @@
 <h1 align="center">
-  <a href="https://ultrarobo.top/"><img src="docs/img/ultra_logo.png" width="500em"></a>
+  <a href="https://rmultra.cn/"><img src="docs/img/ultra_logo.png" width="500em"></a>
   <br/>
-  <a href="https://ultrarobo.top/">RoboMaster UI 设计器</a>
+  <a href="https://rmultra.cn/">RoboMaster UI 设计器</a>
 </h1>
 
 成都大学Ultra战队UI设计器，特地适配了 `bsp_ui.c` 的函数使用，
